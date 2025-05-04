@@ -57,10 +57,6 @@ Example n8n Flow:
 
 Create a `.env.local` file in the project root:
 
-```env
-NEXT_PUBLIC_N8N_API_URL=https://your-n8n-instance.com/webhook/wordplay/get-word
-```
-
 ### 5. Run the App
 
 ```bash
