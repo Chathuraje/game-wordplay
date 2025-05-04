@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:is(.dark *));
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 
 @theme inline {
   --color-background: var(--background);
@@ -44,71 +47,71 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --background: #0a1f44; /* Dark blue background */
+  --foreground: #ffffff; /* White text */
+  --card: #1c3654; /* Darker blue card */
+  --card-foreground: #ffffff; /* White card text */
+  --popover: #0a1f44; /* Dark blue popover */
+  --popover-foreground: #ffffff; /* White popover text */
+  --primary: #ffffff; /* Blue primary button */
+  --primary-foreground: #ffffff; /* White text on primary button */
+  --secondary: #3a5a79; /* Light blue secondary button */
+  --secondary-foreground: #ffffff; /* White secondary text */
+  --muted: #1c3654; /* Muted blue */
+  --muted-foreground: #ffffff; /* Muted white text */
+  --accent: #4e7e92; /* Accent color for subtle highlights */
+  --accent-foreground: #ffffff; /* Accent white text */
+  --destructive: #e03e36; /* Red for destructive actions */
+  --border: #3b4d6b; /* Dark blue border */
+  --input: #2f4a6d; /* Light blue input field */
+  --ring: #5a7f94; /* Light blue ring */
+  --chart-1: #2a3f56; /* Darker blue for chart 1 */
+  --chart-2: #4b6f85; /* Darker blue for chart 2 */
+  --chart-3: #64798d; /* Light blue for chart 3 */
+  --chart-4: #8a9cb4; /* Subtle blue for chart 4 */
+  --chart-5: #b0c3d0; /* Lightest blue for chart 5 */
+  --sidebar: #0a1f44; /* Dark blue sidebar */
+  --sidebar-foreground: #ffffff; /* White sidebar text */
+  --sidebar-primary: #004e70; /* Darker blue for primary sidebar */
+  --sidebar-primary-foreground: #ffffff; /* White primary text */
+  --sidebar-accent: #4e7e92; /* Blue accent sidebar */
+  --sidebar-accent-foreground: #ffffff; /* White accent text */
+  --sidebar-border: #2f4a6d; /* Dark border for sidebar */
+  --sidebar-ring: #5a7f94; /* Light blue sidebar ring */
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --background: #0a1f44; /* Dark blue background */
+  --foreground: #ffffff; /* White text for dark mode */
+  --card: #1c3654; /* Darker blue card in dark mode */
+  --card-foreground: #ffffff; /* White card text in dark mode */
+  --popover: #0a1f44; /* Dark blue popover in dark mode */
+  --popover-foreground: #ffffff; /* White text in popover */
+  --primary: #005f7f; /* Primary blue button in dark mode */
+  --primary-foreground: #ffffff; /* White text on primary button */
+  --secondary: #3a5a79; /* Light blue secondary button */
+  --secondary-foreground: #ffffff; /* White secondary text */
+  --muted: #1c3654; /* Muted blue in dark mode */
+  --muted-foreground: #ffffff; /* Muted white text */
+  --accent: #4e7e92; /* Accent color for highlights */
+  --accent-foreground: #ffffff; /* Accent white text */
+  --destructive: #e03e36; /* Red for destructive actions */
+  --border: #3b4d6b; /* Dark blue border */
+  --input: #2f4a6d; /* Light blue input field */
+  --ring: #5a7f94; /* Light blue ring */
+  --chart-1: #2a3f56; /* Dark blue chart color */
+  --chart-2: #4b6f85; /* Dark blue chart color */
+  --chart-3: #64798d; /* Light blue chart color */
+  --chart-4: #8a9cb4; /* Slightly lighter blue for chart 4 */
+  --chart-5: #b0c3d0; /* Soft blue chart */
+  --sidebar: #0a1f44; /* Dark blue sidebar */
+  --sidebar-foreground: #ffffff; /* White text in sidebar */
+  --sidebar-primary: #004e70; /* Dark blue primary sidebar */
+  --sidebar-primary-foreground: #ffffff; /* White text on primary sidebar */
+  --sidebar-accent: #4e7e92; /* Blue accent sidebar */
+  --sidebar-accent-foreground: #ffffff; /* White sidebar accent text */
+  --sidebar-border: #2f4a6d; /* Subtle blue border */
+  --sidebar-ring: #5a7f94; /* Light blue sidebar ring */
 }
 
 @layer base {
